@@ -4,6 +4,7 @@
 直接使用waf--- 在网站的所有php文件或者程序的index.php头部放入 
 ```php
 require_once("你的文件目录/common.php");
+//例如require_once("/www/Waf/common.php");
 //然后 接着下一行放入
 if (isBlacklisted($_SERVER['REMOTE_ADDR'])||isBlacklisted(getRealIp())) {
     header('HTTP/1.1 403 Forbidden');
@@ -18,6 +19,7 @@ if (isBlacklisted($_SERVER['REMOTE_ADDR'])||isBlacklisted(getRealIp())) {
 
 在当前使用php的php.ini 文件末尾加上
 auto_prepend_file = 你的文件目录/common.php
+例如auto_prepend_file = /www/Waf/common.php
 保存并重启php
 然后跟方法一 一样在文件头部放入
 ```php
