@@ -53,5 +53,5 @@ http://你的域名/black/remove.php?ip=需要删除的ip
 邮箱文件:https://github.com/PHPMailer/PHPMailer
 其它的都内置文件内
 
-##直接下载压缩包
+## 直接下载压缩包
 https://github.com/myfz-2002/php-Waf-myfz/releases/download/myfz01/php-Waf-myfz-main.zip
